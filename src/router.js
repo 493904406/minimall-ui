@@ -12,6 +12,11 @@ export default new Router({
  routes: [
   // 下面都是固定的写法
     {
+      path:"/",
+      name:"Login",
+      component:Login
+    },
+    {
       path: '/login',
       name: 'Login',
       component: Login

@@ -1,12 +1,23 @@
 <template>
   <div id="app">
+    <header></header>
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">登录</router-link> |
+      <router-link to="/index">首页</router-link>
     </div>
     <router-view/>
   </div>
 </template>
+
+<script>
+import Header from './components/header.vue'
+
+export default {
+ components:{
+  Header
+ }
+}
+</script>
 
 <style lang="less">
 #app {
